@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    color: white;
+    font-family: 'Poppins';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: black;
+}
+
+/* ANIMATIONS */
+
+@keyframes fade-up {
+    from {
+        transform: translate(0, -20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+.fade-up {
+    animation: fade-up 200ms ease-in-out;
+}
+
+/* NAVBAR */
+
+nav {
+    margin-top: 0.5rem;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav-logo-outer {
+    flex: 1;
+}
+
+.nav-logo {
+    max-width: 80px;
+    margin: 1rem;
+}
+
+.nav-text {
+    margin: 0 2.5rem;
+    font-size: 1.8rem;
+}
+
+.sign-up {
+    background: #00C6FF;
+    background: linear-gradient(to right, #00C6FF 3%, #0072FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-weight: 800;
+}
+
+/* INTRO */
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-img {
+    max-width: 30%;
+}
+
+.intro-aside {
+    max-width: 60%;
+    margin-left: 3%;
+}
+
+.intro-title {
+    font-size: 4rem;
+    width: fit-content;
+    margin: 0;
+    
+}
+
+.intro-subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+    width: fit-content;
+    margin: 10px;
+}
+
+.intro-description {
+    font-size: 1.5rem;
+    max-width: 85%;
+    width: fit-content;
+    margin: 10px;
+}
+
+.register {
+    padding: 0.75rem;
+    margin: 1rem 0;
+    border: none;
+    
+    color: black;
+    background-color: #20FF51;
+
+    font-size: 1.5rem;
+    transition:  200ms ease-in-out;
+}
+
+.register:hover {
+    transform: translate(-5px, 5px);
+    cursor: pointer;
+}
+
+.register:hover::after {
+    content: "";
+    border: 2px solid #20FF51;
+    transform: translate(100px, -10px);
+}
