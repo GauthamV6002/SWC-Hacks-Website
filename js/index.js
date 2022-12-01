@@ -9,3 +9,10 @@ const observer = new IntersectionObserver((entries) => {
 
 const fadeInUps = document.querySelectorAll('.fadeInUp, .fadeInRight, .fadeInLeft, .fadeInStack');
 fadeInUps.forEach(el => observer.observe(el));
+
+const replace = document.getElementById("replace");
+
+replace.addEventListener("click", () => {
+    replace.innerText = "What if I can't code? \n\n No problem! You can either use it as a chance to learn to code, or work towards one of our other non-code tracks such as UI/UX or Pitch!"
+    replace.classList.add("white-bg-highlight")
+})

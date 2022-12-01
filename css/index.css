@@ -277,6 +277,29 @@ nav {
     font-size: 1.5rem;
 }
 
+
+.replace {
+    background-color: transparent;
+    border: 1px solid white;
+    
+    font-size: 1.2rem;
+    padding: 1rem;
+
+    transition: 200ms ease-in-out;
+}
+
+.replace:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+.white-bg-highlight {
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
 @media screen and (max-width: 720px) {
     .hackathon { 
         flex-direction: column;
@@ -296,6 +319,10 @@ nav {
 
     .hackathon-title { font-size: 2rem; }
     .hackathon-description { font-size: 0.75rem; }
+    .replace { 
+        margin-top: 1rem;
+        font-size: 0.8rem;
+    }
 }
 
 /* PRIZES SECTION */
