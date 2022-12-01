@@ -190,7 +190,7 @@ nav {
     background-color: transparent;
     cursor: pointer;
 
-    box-shadow: 0px 0px 122px 16px #20FF51;
+    box-shadow: 0px 0px 122px 16px #20ff50b5;
 }
 
 /* SCROLL DOWN THING */
@@ -291,11 +291,26 @@ nav {
 .prize-card:hover .prize-card-icon { color: black }
 .prize-card:hover .prize-card-caption { color: black }
 
-.prize-ui:hover { background-color: rgb(0, 255, 0); }
-.prize-pitch:hover { background-color: rgb(0, 238, 255); }
-.prize-creativity:hover { background-color: rgb(255, 242, 0); }
-.prize-impressive:hover { background-color: rgb(240, 128, 128); }
-.prize-overall:hover { background-color: rgb(201, 114, 255); }
+.prize-ui:hover { 
+    background-color: rgb(0, 255, 0); 
+    box-shadow: 0px 0px 60px 16px rgba(0, 255, 0, 0.3);
+}
+.prize-pitch:hover { 
+    background-color: rgb(0, 238, 255); 
+    box-shadow: 0px 0px 60px 16px rgba(0, 238, 255, 0.3);
+}
+.prize-creativity:hover { 
+    background-color: rgb(255, 242, 0); 
+    box-shadow: 0px 0px 60px 16px rgba(255, 242, 0, 0.3);
+}
+.prize-impressive:hover { 
+    background-color: rgb(240, 128, 128); 
+    box-shadow: 0px 0px 124px 16px rgba(240, 128, 128, 0.3);
+}
+.prize-overall:hover { 
+    background-color: rgb(201, 114, 255); 
+    box-shadow: 0px 0px 124px 32px rgba(201, 114, 255, 0.3);
+}
 
 .prizes-footer {
     margin-top: 4rem;
