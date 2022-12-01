@@ -15,35 +15,74 @@
 <body>
     <nav>
         <div class="nav-logo-outer"><img src="./images/logo.png" class="nav-logo" alt="SWC Hacks Logo"></div>
-        <a class="nav-link">Hackathon?</a>
-        <a class="nav-link">Prizes</a>
-        <a class="nav-link">Rules</a>
-        <a class="nav-link sign-up">Sign up</a>
+        <a class="nav-link" href="#hackathon">Hackathon?</a>
+        <a class="nav-link" href="#prizes">Prizes</a>
+        <!-- <a class="nav-link">Rules</a> -->
+        <a class="nav-link sign-up" href="https://docs.google.com/forms/d/e/1FAIpQLSeUMDYWINDJYSULRU-pKxNxA5nbzgGEcGM5JYCDb69yJvQeqg/viewform">Sign up</a>
     </nav>
 
-    <div class="intro">
-        <img src="./images/app.png" alt="Hackathon application" class="app-img">
+    <div class="intro fadeInUp">
+        <img src="./images/app.png" alt="Hackathon application" class="app-img grow-sm">
         <div class="intro-aside">
-            <h1 class="intro-title">Introducing SWC Hacks!</h1>
-            <h3 class="intro-subtitle"><span class="material-symbols-outlined"> calendar_month </span> December 1st - 5th, 2022</h3>
-            <p class="intro-description">A single weekend event to code anything you want, based on a given theme, and win over $100 in prizes.</p>
-            <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSf9RZHS25ZuUDtZRsC82cWYnG-VuPS2UNt9_hxalkhRipphaQ/viewform"><button class="register">Sign Up</button></a>
+            <h1 class="intro-title fadeInUp">Introducing SWC Hacks!</h1>
+            <h3 class="intro-subtitle fadeInUp"><span class="material-symbols-outlined"> calendar_month </span> December 8th - 12th, 2022</h3>
+            <p class="intro-description fadeInUp">A single weekend event to code anything you want, based on a given theme, and <span class="underline">win over $100 in prizes.</span></p>
+            <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeUMDYWINDJYSULRU-pKxNxA5nbzgGEcGM5JYCDb69yJvQeqg/viewform">
+                <button class="register fadeInUp">Sign Up</button>
+            </a>
         </div>
     </div>
 
-    <div class="cards">
-        <div class="card">
-            <h4 class="card-title">Hackathon?</h4>
-            <img src="" alt="">
-        </div>
-        <div class="card">
-            <h4 class="card-title">Hackathon?</h4>
-            <img src="" alt="">
-        </div>
-        <div class="card">
-            <h4 class="card-title">Hackathon?</h4>
-            <img src="" alt="">
-        </div>
+    <div class="divider-1" id="scroll-show">
+        <a class="material-symbols-outlined scroll-down" href="#hackathon"> arrow_downward </a>
     </div>
+
+    <div class="hackathon fadeInLeft" id="hackathon">
+        <div class="hackathon-aside">
+            <h2>Hackathon?</h2>
+            <p class="hackathon-description">Hackathons are lightning fast coding competitions, 
+                where you have just a weekend to build an program.
+            </p>
+            <p class="hackathon-description">Forget about perfect - just think about getting it done! 
+                Whether you've never coded and want to jumpstart your journey, or you're a seasoned expert, SWC Hacks 
+                is the perfect place for students to make something meaningful. 
+            </p>
+            <p class="hackathon-description">
+                All while you're having a great time, and <span class="underline">actually have a chance to win something</span>.
+            </p>
+        </div>
+
+        <div class="fadeInRight"><img src="./images/programmer.png" alt="Hackathon Image"></div>
+    </div>
+
+    <div class="prizes" id="prizes">
+        <h2 class="prizes-title fadeInUp">Prizes</h2>
+        <h4 class="prizes-subtitle fadeInUp">A weekend of coding should be worth it.</h4>
+        <div class="prize-row">
+            <div class="prize-card prize-ui fadeInStack">
+                <span class="material-symbols-outlined prize-card-icon"> temp_preferences_custom </span>
+                <p class="prize-card-caption">UI/UX</p>
+            </div>
+            <div class="prize-card prize-pitch fadeInStack">
+                <span class="material-symbols-outlined prize-card-icon"> co_present </span>
+                <p class="prize-card-caption">Pitch</p>
+            </div>
+            <div class="prize-card prize-creativity fadeInStack">
+                <span class="material-symbols-outlined prize-card-icon"> emoji_objects </span>
+                <p class="prize-card-caption">Creativity</p>
+            </div>
+            <div class="prize-card prize-impressive fadeInStack">
+                <span class="material-symbols-outlined prize-card-icon"> settings </span>
+                <p class="prize-card-caption">Technically Impressive</p>
+            </div>
+            <div class="prize-card prize-overall fadeInStack">
+                <span class="material-symbols-outlined prize-card-icon"> star </span>
+                <p class="prize-card-caption">Best Overall</p>
+            </div>
+
+        </div>
+        <p class="prizes-footer" id="delay2000">Still curious? Ask one of us on the discord server! Rules and Guidelines will be out by December 6th.</p>
+    </div>
+
 </body>
 </html>
