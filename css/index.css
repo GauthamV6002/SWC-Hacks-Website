@@ -41,6 +41,16 @@ h2 {
     text-decoration-thickness: 4px;    
 }
 
+.mobile-response-show {
+    display: none;
+}
+
+
+@media screen and (max-width: 720px) {
+    .mobile-response-show { display: block; }
+    .mobile-response-hide { display: none; }
+}
+
 /* ANIMATIONS */
 
 .fadeInUp {
@@ -131,6 +141,10 @@ nav {
     font-weight: 800;
 }
 
+@media screen and (max-width: 720px) {
+    nav { display: none; }
+}
+
 /* INTRO */
 
 .intro {
@@ -142,7 +156,8 @@ nav {
 }
 
 .app-img {
-    max-width: 30%;
+    width: 30%;
+    min-width: 300px;
 }
 
 .intro-aside {
@@ -193,6 +208,29 @@ nav {
     box-shadow: 0px 0px 122px 16px #20ff50b5;
 }
 
+@media screen and (max-width: 720px) {
+    .intro { 
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    .intro-aside {
+        text-align: center;
+        max-width: 80%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-title { font-size: 2rem; }
+    .intro-subtitle { font-size: 0.8rem;}
+    .intro-description { font-size: 0.75rem; }
+    .register { 
+        font-size: 1rem;
+    }
+}
+
 /* SCROLL DOWN THING */
 
 .divider-1 {
@@ -227,12 +265,37 @@ nav {
     justify-content: center;
 }
 
+.hackathon-img {
+    max-width: 500px;
+}
+
 .hackathon-aside {
     max-width: 60%;
 }
 
 .hackathon-description {
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 720px) {
+    .hackathon { 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 3rem 0;
+    }
+
+    .hackathon-img {
+        max-width: 300px;
+    }
+
+    .hackathon-aside {
+        text-align: center;
+        max-width: 80%;
+    }
+
+    .hackathon-title { font-size: 2rem; }
+    .hackathon-description { font-size: 0.75rem; }
 }
 
 /* PRIZES SECTION */
@@ -317,4 +380,19 @@ nav {
     font-size: 1.4rem;
 }
 
-.ease-anim { transition: 200ms ease-in-out; }
+@media screen and (max-width: 720px) {
+    .prizes {
+        text-align: center;
+    }
+    
+    .prize-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .prizes-footer {
+        font-size: 12px;
+    }
+}
