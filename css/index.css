@@ -327,6 +327,10 @@ nav {
 
 /* PRIZES SECTION */
 
+.hidden {
+    display: none;
+}
+
 .prizes {
     margin: 10rem 4rem 15rem;
     display: flex;
@@ -358,7 +362,8 @@ nav {
     text-align: center;
 
     padding: 2rem 3rem;
-    max-width: 100px;
+    width: 150px;
+    height: 250px;
 
     overflow: hidden;
 
@@ -373,13 +378,13 @@ nav {
 }
 
 .prize-card:hover {
-    box-shadow: 0px 0px 60px 16px rgba(255, 255, 255, 0.2);
     scale: 1.1;
     cursor: pointer;
 }
 
-.prize-card:hover .prize-card-icon { color: black }
-.prize-card:hover .prize-card-caption { color: black }
+.prize-card:hover .prize-card-icon { display: none; }
+.prize-card:hover .prize-card-caption { display: none; }
+.prize-card:hover .prize-card-description { color: black }
 
 .prize-ui:hover { 
     background-color: rgb(0, 255, 0); 
@@ -402,9 +407,20 @@ nav {
     box-shadow: 0px 0px 124px 32px rgba(201, 114, 255, 0.3);
 }
 
+.prize-card:hover .prize-expand {
+    display: none;
+}
+
 .prizes-footer {
     margin-top: 4rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+
+    text-align: center;
+}
+
+.prize-card:hover .prize-card-description {
+    display: block;
+    font-family: 'Poppins';
 }
 
 @media screen and (max-width: 720px) {
@@ -417,6 +433,13 @@ nav {
         justify-content: center;
         align-items: center;
         gap: 3rem;
+    }
+
+    .prize-card:hover .prize-card-icon { display: block; }
+    .prize-card:hover .prize-card-caption { display: block; }
+
+    .prize-card {
+        height: 300px;
     }
 
     .prizes-footer {
