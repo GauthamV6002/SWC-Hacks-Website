@@ -332,7 +332,7 @@ nav {
 }
 
 .prizes {
-    margin: 10rem 4rem 15rem;
+    margin: 10rem 4rem 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -444,5 +444,31 @@ nav {
 
     .prizes-footer {
         font-size: 12px;
+    }
+}
+
+/* SPONSORS */
+
+.sponsors-title {
+    width: 100%;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.wolfram {
+    background: white;
+    max-width: 400px;
+}
+
+@media screen and (max-width: 720px) {
+    .sponsors {
+        flex-direction: column;
     }
 }
