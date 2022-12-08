@@ -218,3 +218,27 @@ nav {
 .rules ol li {
     margin: 1rem 0;
 }
+
+/* RUBRIC */
+
+.rubric-title {
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid;
+    padding: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.footer {
+    text-align: center;
+    margin: 4rem 0;
+
+    font-weight: 400;
+    font-size: 1.5rem;
+}
